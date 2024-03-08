@@ -1,32 +1,40 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome,
+Title: European Union Capital Guessing Game
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+Description of the quiz game:
 
-## Reminders
+This Python application is a fun and educational quiz game that challenges you to guess the capital city of the European Union. It provides a simple and engaging way to test your geographical knowledge and learn about Europe.
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+Features:
 
-## Creating the Heroku app
+Randomized guess: Each time you play, a random city will be chosen as the correct answer, keeping the game fresh and challenging.
+Multiple choice format: Four city names are displayed, including the actual capital, giving you a chance to reason and choose the correct answer.
+Clear instructions: A dedicated "Instructions" option in the main menu provides a clear explanation of how to play the game.
+User-friendly interface: The game uses simple text prompts and responses, making it accessible to users of all levels.
+Exit option: You can easily exit the game at any time by entering "quit."
+Installation:
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+Prerequisites: This application requires Python 3.x to be installed on your system. You can download it from https://www.python.org/downloads/.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+Clone or download the repository: Use Git to clone the repository or download the code files directly.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+Run the application: Open a terminal or command prompt, navigate to the directory containing the application file (e.g., run.py), and execute it using the following command:
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+Bash
+python run.py
+Use code with caution.
+Usage:
 
-Connect your GitHub repository and deploy as normal.
+Welcome message: Upon launching the application, you will be greeted with a welcome message and a question about your readiness to play.
+Main menu: You will be presented with a main menu offering three options:
+Start Game: Begin a new game session.
+Instructions: Access the instructions on how to play the game.
+Exit: Terminate the application.
+Gameplay: If you choose to start the game, you will be asked to guess the capital city of the European Union. Four city names will be displayed, and you need to type the correct city name (case-sensitive) to submit your guess.
+Feedback: The application will provide feedback on your guess, congratulating you on a correct guess or prompting you to try again if it's incorrect.
+Exiting: You can exit the game at any point during gameplay by entering "quit" as your guess.
+Additional Notes:
 
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
+Feel free to modify the game's functionality or add additional features to personalize your learning experience.
+Consider incorporating error handling to prevent invalid inputs and improve the user experience.

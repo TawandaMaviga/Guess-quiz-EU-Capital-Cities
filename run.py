@@ -14,18 +14,38 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('Guess Quiz-EU Capital Cities')
 
+print("Welcome to the European Capital Guessing Game!")
+print("Are you ready to test your knowledge?")
+
+def display_instructions():
+    """"""
+    ("Displays instructions on how to play the game.")
+    """"""
+    print("/n--- instructions ---")
+    print("The quiz will ask you to guess the capital city of the European Union.")
+    print("Four city names will be displayed, including the correct one.")
+    print("Choose the correct city by typing its name correctly.")
+    print("You can exit the game at anytime by typing 'quit'.")
+    print("Goodluck!")
+
+    def main_menu():
+        """"""
+        ("Displays the main menu options.")
+        """"""
+        print("/nMain Menu")
+        print("Start Game")
+        print("Instructions")
+        print("Exit")
 
 cities = ["Brussels", "Frankfurt", "Luxemborg", "Strasbourg"]
 cities_to_guess = random.choice(cities) #Pick random cities from this list
-
-#correct_city = cities_to_guess("Luxemborg") #i have put the correct city for easier access
 
 print("Guess the capital city of the European Union")
 for city in cities:
     print(city)
 
 while True:
-    guess = input("Enter your guess(or 'quit' to exit): ").lower() #Converted guess to lower case
+    guess = input("Enter your guess(or 'quit' to exit):/n ").lower() #Converted guess to lower case
 
     if guess == 'quit':
         break  # Exit the loop if user enters "quit"
